@@ -1,5 +1,5 @@
 #include <pybind11/pybind11.h>
-#include "../units.hpp"
+#include "units.hpp"
 
 namespace units {
     void bind_units(pybind11::module& m){
