@@ -5,7 +5,10 @@
 namespace units {
 static constexpr double me = 9.109383713928e-28; // [gr] electron mass
 static constexpr double clight = 2.99792458000e10 ; // [cm/s] speed of light
-static constexpr double me_c2 = me*clight*clight; // [gr*cm^2/s^2] electron rest energy
+static constexpr double inv_clight = 1/clight ; // [s/cm] inverse speed of light
+static constexpr double clight2 = clight*clight ; // [cm/s] speed of light
+static constexpr double inv_clight2 = 1/clight2 ; // [cm/s] speed of light
+static constexpr double me_c2 = me*clight2; // [gr*cm^2/s^2] electron rest energy
 
 
 static constexpr double k_boltz = 1.380649e-16; // [gr * cm^2 / s^2 / K] boltzmann constant
